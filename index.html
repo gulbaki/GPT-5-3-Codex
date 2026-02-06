@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseKit | Open-Source System Health for Teams</title>
+    <meta
+      name="description"
+      content="PulseKit is an open-source developer tool for tracking system health and usage metrics across services."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#" aria-label="PulseKit home">
+          <span class="brand-mark" aria-hidden="true">PK</span>
+          <span class="brand-text">PulseKit</span>
+        </a>
+        <nav class="top-links" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="#open-source">Open source</a>
+        </nav>
+        <a class="btn btn-ghost" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section reveal">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Open-source observability for product teams</p>
+            <h1>Track system health and usage metrics in one clean view.</h1>
+            <p class="hero-copy">
+              PulseKit gives developers and operators shared visibility into uptime, latency, error rates,
+              and feature usage without vendor lock-in.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://github.com" target="_blank" rel="noreferrer">Star on GitHub</a>
+              <a class="btn btn-ghost" href="#cta">Clone &amp; Deploy</a>
+            </div>
+
+            <a
+              class="stars-badge"
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub stars"
+            >
+              <span aria-hidden="true">GH</span>
+              <span>12.8k stars on GitHub</span>
+            </a>
+          </div>
+
+          <div class="hero-panel" aria-label="Dashboard preview">
+            <div class="panel-head">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="panel-chart panel-chart-lg"></div>
+            <div class="panel-row">
+              <div class="panel-chart"></div>
+              <div class="panel-chart"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section reveal">
+        <div class="container">
+          <h2>Built for developer trust</h2>
+          <p class="section-copy">Simple defaults, transparent data paths, and source code you can inspect.</p>
+
+          <div class="feature-grid">
+            <article class="card feature-card">
+              <div class="icon" aria-hidden="true">UP</div>
+              <h3>Service health timelines</h3>
+              <p>Monitor uptime and response time trends by service, environment, and region.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="icon" aria-hidden="true">API</div>
+              <h3>Usage metrics by endpoint</h3>
+              <p>Track volume, active projects, and key API route behavior over time.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="icon" aria-hidden="true">SLO</div>
+              <h3>Alerting that stays quiet</h3>
+              <p>Trigger notifications from clear SLO thresholds instead of noisy defaults.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="icon" aria-hidden="true">OPS</div>
+              <h3>Deploy anywhere</h3>
+              <p>Run on your own infrastructure with Docker, Kubernetes, or bare metal.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="icon" aria-hidden="true">EXT</div>
+              <h3>Extensible integrations</h3>
+              <p>Connect logs, tracing, and incident tooling through a plugin-friendly API.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="icon" aria-hidden="true">RLS</div>
+              <h3>Team-scoped access</h3>
+              <p>Use role-based views so engineers and operators see only what they need.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section reveal">
+        <div class="container">
+          <h2>How it works</h2>
+          <div class="steps-grid">
+            <article class="card step-card">
+              <span class="step-num">1</span>
+              <h3>Connect your services</h3>
+              <p>Add the lightweight collector to your API or worker runtime.</p>
+            </article>
+            <article class="card step-card">
+              <span class="step-num">2</span>
+              <h3>Stream metrics in real time</h3>
+              <p>Send health and usage events to a single, queryable metrics layer.</p>
+            </article>
+            <article class="card step-card">
+              <span class="step-num">3</span>
+              <h3>Share actionable dashboards</h3>
+              <p>Review trends, spot regressions, and improve reliability together.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" aria-labelledby="screens-title">
+        <div class="container">
+          <h2 id="screens-title">Example dashboards</h2>
+          <p class="section-copy">Snapshot layouts teams typically start with.</p>
+          <div class="screens-grid">
+            <article class="card screen-card">
+              <h3>Latency &amp; errors</h3>
+              <div class="screen-image" role="img" aria-label="Latency and error dashboard preview"></div>
+            </article>
+            <article class="card screen-card">
+              <h3>Service health map</h3>
+              <div class="screen-image" role="img" aria-label="Service health map dashboard preview"></div>
+            </article>
+            <article class="card screen-card">
+              <h3>Usage by endpoint</h3>
+              <div class="screen-image" role="img" aria-label="Usage metrics dashboard preview"></div>
+            </article>
+            <article class="card screen-card">
+              <h3>Release impact</h3>
+              <div class="screen-image" role="img" aria-label="Release impact dashboard preview"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="open-source" class="section reveal">
+        <div class="container">
+          <h2>Open source, first class</h2>
+          <div class="oss-grid">
+            <article class="card">
+              <h3>MIT licensed</h3>
+              <p>Use PulseKit freely in commercial or internal projects with permissive terms.</p>
+            </article>
+            <article class="card">
+              <h3>Contributor friendly</h3>
+              <p>Clear issue labels, starter tasks, and review guides help new contributors ship fast.</p>
+            </article>
+            <article class="card">
+              <h3>Public roadmap</h3>
+              <p>Feature priorities are discussed in the open with RFCs and monthly milestone boards.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section cta-section reveal">
+        <div class="container cta-card">
+          <h2>Clone, deploy, and monitor in minutes.</h2>
+          <p>
+            Start with the default stack, then customize collectors and dashboards for your team.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com" target="_blank" rel="noreferrer">Clone &amp; Deploy</a>
+            <a class="btn btn-ghost" href="https://github.com" target="_blank" rel="noreferrer">Read the Docs</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>(c) 2026 PulseKit</p>
+        <nav aria-label="Footer">
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://example.com/docs" target="_blank" rel="noreferrer">Docs</a>
+          <a href="https://discord.com" target="_blank" rel="noreferrer">Discord</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
